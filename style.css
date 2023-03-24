@@ -9,6 +9,7 @@
 
 .box1 {
   display: flex;
+  flex-direction: row;
   position: absolute;
   width: 375px;
   height: 48px;
@@ -298,20 +299,25 @@
   background: #ff6b00;
 }
 
-.seeproject:active {
-  background: #ff6b00;
+.seeproject:enabled {
+  background: #f76504;
   color: #fff;
   cursor: pointer;
 }
 
 .seeproject:hover {
-  background: #e02046;
-  color: #1c1a19;
+  background: #f6d2d9;
+  color: #fa5706;
   cursor: pointer;
 }
 
+.seeproject:disabled {
+  background: #f4f5f7;
+  color: black;
+}
+
 .storyfull {
-  display: flex;
+  display: grid;
   flex-direction: column;
   align-items: center;
   margin-left: 50px;
@@ -360,6 +366,7 @@
   font-size: 32px;
   line-height: 44px;
   margin-top: 73px;
+  margin-left: 20px;
 
   /* or 138% */
 
@@ -380,6 +387,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  margin-left: 20px;
 
   /* or 150% */
 
@@ -394,14 +402,15 @@
   gap: 12px;
   list-style: none;
   margin-top: 10px;
-  width: 247px;
+  margin-left: 20px;
+  width: auto;
   height: 40px;
 }
 
 .langu1 li {
   width: auto;
   height: auto;
-  display: flex;
+  display: grid;
   flex-direction: row;
   align-items: center;
   color: #fff;
@@ -423,7 +432,6 @@
   width: 303px;
   margin-top: 5px;
   height: 28px;
-  margin-left: -24px;
 
   /* Theme 3 / Primary 1 */
 
@@ -431,12 +439,17 @@
 }
 
 .projectorange:hover {
-  background: #57a012;
+  background: #f0d1bb;
   cursor: pointer;
 }
 
-.projectorange:active {
+.projectorange:enabled {
   background: #ff6b00;
+  cursor: pointer;
+}
+
+.projectorange:disabled {
+  background: #fff;
   cursor: pointer;
 }
 
@@ -460,12 +473,17 @@
   color: #fff;
 }
 
-.orange:active {
+.orange:enabled {
   color: #fff;
   cursor: pointer;
 }
 
 .orange:hover {
+  color: #ff6b00;
+  cursor: pointer;
+}
+
+.orange:disabled {
   color: black;
   cursor: pointer;
 }
@@ -530,12 +548,28 @@
   gap: 10px;
   margin-left: 20px;
   margin-top: 20px;
-  width: 156px;
-  height: 48px;
+  width: 134px;
+  height: auto;
 
   /* Theme 3 / Primary 1 */
 
-  background: #ff6b00;
+  background: #fb6b05;
+  cursor: pointer;
+}
+
+.on:enabled {
+  background: #f76504;
+  color: #fff;
+  cursor: pointer;
+}
+
+.on:hover {
+  background: #f6d2d9;
+  color: #f76504;
+}
+
+.on:disabled {
+  background: #fff;
 }
 
 .getit {
@@ -557,6 +591,19 @@
   /* Theme 2 / Neutral 11 */
 
   color: #fff;
+}
+
+.getit:enabled {
+  color: #fff;
+  cursor: pointer;
+}
+
+.getit:hover {
+  color: #f76504;
+}
+
+.getit:disabled {
+  color: black;
 }
 
 .mobile {
