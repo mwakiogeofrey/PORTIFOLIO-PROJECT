@@ -856,3 +856,22 @@ text-align: center;
 color: #172B4D;
 
 }
+
+form {
+ 
+ 
+  width: 300px;
+
+  padding: 1em;
+ 
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
