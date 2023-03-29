@@ -217,32 +217,39 @@
     <div class="box5">
       <h1 class="alway">I'm always<br> interested in hearing<br> about new projects,<br> so if you'd like to<br> chat
         please get in touch.</h1>
-        <form class="myall" action="/my-handling-form-page" method="post">
-          <ul>
-            <li>
-              <label for="name">Full Name:</label>
-              <input type="text" id="name" name="user_name" />
-            </li>
-            <li>
-              <label for="mail">Email:</label>
-              <input type="email" id="mail" name="user_email" />
-            </li>
-            <label for="msg"></label>
-                <textarea id="msg" name="user_message">Write me something...</textarea>
-              </li>
-              <li class="button">
-                <button type="submit">Get in touch</button>
-              </li>
-            </ul>
+        <form action="https://formspree.io/f/moqzjale" method="POST">
+          <form id="fs-frm" class="contact_form" name="simple-contact-form" action="https://formspree.io/f/{form_id}"
+          method="post">
+  
+          <label for="full-name">
+            Full name
+            <input class="input_name" type="text" name="name" id="full-name" placeholder="Mwakio"
+               required maxlength="30">
+          </label>
+          <label>
+            Email
+            <input class="input_mail" type="email" name="email" placeholder="Mwakiogeofrey579@gmail.com" required>
+          </label>
+          <label>
+            <textarea class="message_box" name="message" placeholder="write your message here" maxlength="500" required></textarea>
+          </label>
+          <button class="touch_btn btn_effect" type="submit">
+           Get in touch
+          </button>
+        </form>
           </form>
+      
 
           <footer class="lastss">
             <ul>  
-              <a href="http://github"><li><i class="fa-brands fa-github"></i></li></a>
-              <a href="http://linkedin"><li><i class="fa-brands fa-linkedin-in"></i></li></a>
-              <a href="http://angellist"><li><i class="fa-brands fa-angellist"></i></li></a>
-              <a href="http://twitter"><li><i class="fa-brands fa-twitter"></i></li></a>
-              <a href="http://medium"><li><i class="fa-brands fa-medium"></i></li></a>
+
+              <li><a href="http://github"></a><i class="fa-brands fa-github"></i></li>
+              <li><a href="http://linkedin"></a><i class="fa-brands fa-linkedin-in"></i></li>
+              <li><a href="http://angellist"></a><i class="fa-brands fa-angellist"></i></li>
+              <li><a href="http://twitter"></a><i class="fa-brands fa-twitter"></i></li>
+              <li><a href="http://medium"></a><i class="fa-brands fa-medium"></i></li>
+            
+            
             </ul>
             <img src="images/Shape.png" alt="">
            </footer>

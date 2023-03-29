@@ -832,7 +832,7 @@
   gap: 58px;
   position: absolute;
   width: 375px;
-  height: 500px;
+  height: 700px;
   left: -1px;
   top: 5887px;
 }
@@ -855,59 +855,133 @@
   color: #172b4d;
 }
 
-.myall {
-  width: 300px;
-  padding: 1em;
-}
-
-ul {
-  list-style: none;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0;
-  margin: 0;
+  gap: 24px;
+  width: 327px;
+  height: 330px;
 }
 
-.myall ul li {
-  margin-top: 1em;
-}
-
-label {
+form label {
   font-family: 'Inter', sans-serif;
   font-style: normal;
+  font-weight: 400;
+  gap: 24px;
+  font-size: 15px;
+  line-height: 24px;
+
+  /* or 160% */
+
+  /* Theme 3 / Neutral 6 */
+
+  color: #979493;
+}
+
+form input {
+  border: 0;
+}
+
+.input_name {
+  width: 327px;
+  height: 20px;
+  border-bottom: 1px solid #cfd8dc;
+}
+
+.input_mail {
+  width: 327px;
+  height: 20px;
+  border-bottom: 1px solid #cfd8dc;
+}
+
+::placeholder {
+  color: #172b4d;
+  font-size: 17px;
+  padding: 15px 16px;
+}
+
+textarea::placeholder {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
 
   /* or 160% */
 
+  /* Theme 3 / Neutral 2 */
+
+  color: #3c3a39;
+}
+
+.message_box {
+  width: 327px;
+  height: 170px;
+  margin-top: 18px;
+
+  /* Theme 3 / Neutral 10 */
+
+  background: #fbf8f7;
+  border: 0;
+}
+
+.touch_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 131px;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+
+  /* identical to box height, or 141% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  /* Theme 2 / Neutral 11 */
+}
+
+.touch_btn:enabled {
+  background: #ff6b00;
+  color: #fff;
+}
+
+.touch_btn:hover {
+  background: #eee6e0;
+  color: #ff6b00;
+}
+
+.touch_btn:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.touch_btn:disabled {
+  background: #e5e5e5;
+  color: #000;
+}
+
+.touch_text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
   display: flex;
   align-items: center;
-
-  /* Theme 3 / Neutral 6 */
-
-  color: #979493;
-  width: 90px;
-  text-align: right;
-}
-
-input,
-textarea {
-  font: 1em sans-serif;
-  width: 200px;
-  box-sizing: border-box;
-  border-radius: 2px;
-  border: 1px solid #999;
-}
-
-textarea {
-  font-family: 'Inter', sans-serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #3c3a39;
-  background: #fbf8f7;
-  margin-top: 20px;
-  height: 5em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #dfe1e6;
 }
 
 .button {
@@ -957,8 +1031,7 @@ button:disabled {
   position: absolute;
   width: 375px;
   height: 72px;
-  left: -10px;
-  top: 750px;
+  top: 850px;
 }
 
 .lastss ul {
