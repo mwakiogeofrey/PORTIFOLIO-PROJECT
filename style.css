@@ -1,14 +1,14 @@
 
-* {
+body {
   margin: 0;
   padding: 0;
-  margin-right: 0;
 }
 
 .container {
   display: flex;
+  flex-direction: column;
   margin: 0;
-  width: 100%;
+  width: 450px;
   height: auto;
 }
 
@@ -107,11 +107,8 @@
 }
 
 .information {
-  width: 327px;
-  height: 123px;
-
-  /* Theme 1 / Body Reguler 2 */
-
+  width: 320px;
+  height: 125px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -132,13 +129,11 @@
   flex-direction: row;
   align-items: center;
   list-style: none;
-  margin-top: 20px;
   gap: 15px;
-  margin-left: 30px;
   font-size: larger;
   width: 200px;
   height: 40px;
-  color: #fff;
+  color: #000;
 }
 
 .icon li {
@@ -163,7 +158,15 @@
   width: 450px;
   height: 3455px;
   margin: 0;
-  top: 682px;
+  top: 638px;
+}
+
+.wow {
+  margin-top: 100px;
+}
+
+.vect {
+  margin-top: -20px;
 }
 
 .my {
@@ -241,6 +244,7 @@
   align-items: center;
   padding: 0;
   gap: 12px;
+  margin-top: -20px;
   list-style: none;
   float: left;
   width: 200px;
@@ -272,10 +276,11 @@
 .seeproject {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  width: 100px;
-  height: 24px;
+  width: 120px;
+  height: 40px;
+  position: absolute;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -283,6 +288,8 @@
   line-height: 24px;
   margin-top: 10%;
   padding-top: 10px;
+  border-radius: 3px;
+  margin-left: -1px;
 
   /* identical to box height, or 141% */
 
@@ -321,8 +328,9 @@
   align-items: center;
   background-image: url("images/Mask\ Group.png");
   background-repeat: repeat-y;
-  margin-left: 20px;
-  margin-top: 60%;
+  position: relative;
+  margin-left: 10px;
+  margin-top: 100%;
   width: 450;
   justify-content: center;
   height: 2320px;
@@ -364,10 +372,11 @@
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
+  position: absolute;
   font-size: 38px;
   line-height: 44px;
-  margin-top: 18%;
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-top: 80px;
 
   /* or 138% */
 
@@ -391,16 +400,16 @@
 .daily111 {
   width: 327px;
   height: 99px;
-  margin-top: 30px;
+  margin-top: 60%;
 
   /* Theme 3 / Body Reguler 2 */
 
   font-family: 'Inter', sans-serif;
   font-style: normal;
+  position: absolute;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin-left: 20px;
 
   /* or 150% */
 
@@ -408,13 +417,14 @@
 }
 
 .daily11 {
-  width: 327px;
-  height: 99px;
-  margin-top: 30px;
+  width: 270px;
+  height: 170px;
+  margin-top: 60%;
 
   /* Theme 3 / Body Reguler 2 */
 
   font-family: 'Inter', sans-serif;
+  position: absolute;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -433,8 +443,7 @@
   padding: 0;
   gap: 12px;
   list-style: none;
-  margin-top: 10%;
-  margin-left: 20px;
+  margin-top: 120%;
   width: auto;
   height: 40px;
 }
@@ -446,7 +455,7 @@
   padding: 0;
   gap: 12px;
   list-style: none;
-  margin-top: 10%;
+  margin-top: 100%;
   margin-left: 20px;
   width: auto;
   height: 40px;
@@ -490,16 +499,30 @@
   display: flex;
   flex-direction: row;
   padding: 12px;
-  position: absolute;
+  position: relative;
   width: 303px;
-  margin-top: 20px;
+  margin-top: 10px;
   height: 28px;
   justify-content: flex-start;
-  margin-left: -10px;
 
   /* Theme 3 / Primary 1 */
 
   background: #ff6b00;
+}
+
+.projectorange1:hover {
+  background: #f0d1bb;
+  cursor: pointer;
+}
+
+.projectorange1:enabled {
+  background: #ff6b00;
+  cursor: pointer;
+}
+
+.projectorange1:disabled {
+  background: #fff;
+  cursor: pointer;
 }
 
 .projectorange {
@@ -509,6 +532,7 @@
   gap: 10px;
   position: absolute;
   width: 303px;
+  margin-left: -45px;
   margin-top: 10px;
   height: 28px;
 
@@ -569,9 +593,11 @@
 
 .box4 {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   width: 450px;
-  height: 1801px;
-  top: 4137px;
+  height: 2001px;
+  top: 4097px;
   margin: 0;
 
   /* Theme 3 / Neutral 1 */
@@ -746,10 +772,11 @@
 }
 
 .firstlang img {
+  position: absolute;
   width: 18px;
   height: 18px;
   margin-left: -130px;
-  margin-top: -44px;
+  margin-top: 100px;
 
   /* Theme 3 / Primary 1 */
 
@@ -816,8 +843,9 @@
 }
 
 .secondlang img {
+  position: absolute;
   margin-left: -270px;
-  margin-top: -44px;
+  margin-top: 30px;
 }
 
 .fream {
@@ -855,14 +883,15 @@
   padding: 0;
   gap: 24px;
   margin-left: 50px;
-  margin-top: 30px;
+  margin-top: 40px;
   width: 267px;
   height: 336px;
 }
 
 .thirdlang img {
+  position: absolute;
   margin-left: -150px;
-  margin-top: -48px;
+  margin-top: 40px;
 }
 
 .skills {
@@ -914,8 +943,8 @@
   flex-direction: column;
   align-items: flex-start;
   position: absolute;
-  width: 375px;
-  height: 800px;
+  width: 450px;
+  height: 1000px;
   margin: 0;
   top: 5887px;
 }
@@ -925,10 +954,11 @@
   height: 216px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
+  position: absolute;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  margin-top: 120px;
+  margin-top: 240px;
   margin-left: 20px;
 
   /* or 138% */
@@ -948,11 +978,12 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   padding: 0;
   gap: 24px;
   width: 327px;
   height: 330px;
-  margin-top: 100px;
+  margin-top: 550px;
   margin-left: 20px;
 }
 
@@ -1118,11 +1149,16 @@ button:disabled {
   cursor: pointer;
 }
 
+.mimi {
+  display: none;
+}
+
 .lastss {
   position: absolute;
   width: 375px;
   height: 72px;
   top: 800px;
+  margin-top: 130px;
 }
 
 .ooh {
@@ -1160,6 +1196,7 @@ button:disabled {
   * {
     margin: 0;
     padding: 0;
+    padding-right: 0;
   }
 
   .container {
@@ -1181,11 +1218,14 @@ button:disabled {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    background-image: url("images/Illustration-header.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
     position: absolute;
     width: 100%;
     height: 590px;
     top: 48px;
-    background: #1c1a19;
   }
 
   .enabled {
@@ -1245,7 +1285,7 @@ button:disabled {
     font-weight: 400;
     font-size: 81px;
     line-height: 82px;
-    margin-left: 80px;
+    margin-left: 140px;
     margin-top: 120px;
     color: #f55800;
   }
@@ -1258,7 +1298,7 @@ button:disabled {
     font-weight: 500;
     font-size: 32px;
     line-height: 44px;
-    margin-left: 80px;
+    margin-left: 140px;
     margin-top: 10px;
     display: flex;
     align-items: center;
@@ -1266,14 +1306,14 @@ button:disabled {
   }
 
   .information {
-    width: 600px;
+    width: 540px;
     height: 50px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    margin-left: 80px;
+    margin-left: 140px;
     margin-top: 20px;
     color: #f4f5f7;
   }
@@ -1283,7 +1323,7 @@ button:disabled {
     flex-direction: column;
     align-items: center;
     list-style: none;
-    margin-top: -130px;
+    margin-top: -140px;
     gap: 15px;
     margin-left: -60px;
     font-size: larger;
@@ -1297,13 +1337,7 @@ button:disabled {
   }
 
   .group {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    position: absolute;
-    right: 0;
-    top: calc(50% - 40px / 2);
-    border-radius: 8px;
+    display: none;
   }
 
   .box3 {
@@ -1314,7 +1348,7 @@ button:disabled {
     position: absolute;
     width: 100%;
     height: 1805px;
-    left: 0;
+    margin: 0;
     top: 875px;
   }
 
@@ -1327,35 +1361,40 @@ button:disabled {
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
-    margin-left: 10%;
+    margin-left: 8%;
     display: flex;
     align-items: center;
     color: #091e42;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
   }
 
   .vect {
-    width: 40%;
+    width: 50%;
+    margin-top: 10px;
   }
 
   .Placeholder {
     display: flex;
     justify-content: flex-end;
     margin-left: 70px;
-    width: 120%;
+    width: 100%;
     top: -50%;
   }
 
   .wow {
+    margin-left: 5%;
+    margin-top: -10%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 5%;
-    margin-top: -10%;
-    width: 100%;
+    padding: 0;
+    gap: 24px;
+    width: 1000px;
     height: 52px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
   }
 
   .story {
@@ -1439,16 +1478,15 @@ button:disabled {
     flex-direction: row;
     align-items: center;
     padding: 12px;
-    margin-top: 80px;
+    position: absolute;
     gap: 10px;
     width: 100px;
     height: 24px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 14px;
     line-height: 24px;
-    margin-left: 27%;
     text-align: center;
     letter-spacing: 0.03em;
     color: #fff;
@@ -1486,7 +1524,7 @@ button:disabled {
     gap: 3%;
     margin-left: 1%;
     position: absolute;
-    width: 100%;
+    width: 99%;
     height: 435px;
     left: 0;
     right: 0;
@@ -1502,42 +1540,43 @@ button:disabled {
 
   .one {
     width: 327px;
-    height: 386px;
+    height: auto;
     background-image: url("images/Card\ Works.png");
     background-repeat: no-repeat;
+    cursor: pointer;
   }
 
   .two {
     width: 327px;
-    height: 386px;
+    height: auto;
     background-image: url("images/Mask\ Group\ \(1\).png");
     background-repeat: no-repeat;
   }
 
   .three {
     width: 327px;
-    height: 386px;
+    height: auto;
     background-image: url("images/Mask\ Group\ \(2\).png");
     background-repeat: no-repeat;
   }
 
   .four {
     width: 327px;
-    height: 386px;
+    height: auto;
     background-image: url("images/Mask\ Group\ \(2\).png");
     background-repeat: no-repeat;
   }
 
   .five {
     width: 327px;
-    height: 386px;
+    height: auto;
     background-image: url("images/Mask\ Group\ \(1\).png");
     background-repeat: no-repeat;
   }
 
   .six {
     width: 327px;
-    height: 386px;
+    height: auto;
     background-image: url("images/Mask\ Group\ \(2\).png");
     background-repeat: no-repeat;
   }
@@ -1550,13 +1589,8 @@ button:disabled {
     font-weight: 400;
     font-size: 38px;
     line-height: 44px;
-    margin-top: 60%;
+    margin-top: 150px;
     margin-left: 20px;
-
-    /* or 138% */
-
-    /* Neutrals/N0 */
-
     color: #fff;
   }
 
@@ -1570,11 +1604,6 @@ button:disabled {
     line-height: 44px;
     margin-top: 18%;
     margin-left: 20px;
-
-    /* or 138% */
-
-    /* Neutrals/N0 */
-
     color: #fff;
   }
 
@@ -1618,9 +1647,9 @@ button:disabled {
   }
 
   .daily11 {
-    width: 301px;
+    width: 250px;
     height: 99px;
-    margin-top: 10px;
+    margin-top: 250px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1637,9 +1666,9 @@ button:disabled {
     padding: 0;
     gap: 12px;
     list-style: none;
-    margin-top: 10px;
+    margin-top: 400px;
     margin-left: 20px;
-    width: auto;
+    width: 100px;
     height: 40px;
   }
 
@@ -1660,7 +1689,26 @@ button:disabled {
   }
 
   .projectorange {
-    display: none;
+    width: 24.8%;
+    margin-left: 20px;
+    margin-top: 35.5%;
+    height: 31px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+  }
+
+  .orange {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
   }
 
   .projectorange1 {
@@ -1671,7 +1719,15 @@ button:disabled {
     width: 100%;
     height: 1200px;
     top: 2250px;
-    background: #1c1a19;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto;
+    background-position-y: top;
+    background-position-y: 40px;
+    background-image: url("images/Frame.png");
   }
 
   .aboutme {
@@ -1680,23 +1736,34 @@ button:disabled {
     font-family: 'Crete Round', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: normal;
     font-weight: 500;
-    margin-top: 150px;
+    margin-top: 100px;
     font-size: 76px;
     line-height: 88px;
-    margin-left: 20px;
+    margin-left: 80px;
     letter-spacing: 0.37px;
     color: #ff6b00;
   }
 
+  .mimi {
+    height: 1px;
+    width: 70%;
+    margin-top: 70px;
+    display: flex;
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+    color: #cfd8dc;
+  }
+
   .hello1 {
     width: 327px;
-    height: 148px;
+    height: 100px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 17px;
-    margin-top: 20px;
-    margin-left: 20px;
+    font-size: 14px;
+    margin-top: 40px;
+    margin-left: 80px;
     line-height: 24px;
     color: #f4f5f7;
   }
@@ -1707,9 +1774,10 @@ button:disabled {
     align-items: center;
     padding: 12px;
     gap: 10px;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 80px;
+    margin-top: 40px;
     width: 134px;
+    border-radius: 3px;
     height: auto;
     background: #fb6b05;
     cursor: pointer;
@@ -1773,30 +1841,25 @@ button:disabled {
   }
 
   .vector2 {
-    color: #fff;
-    margin-top: 100px;
-    display: flex;
-    margin-left: 30px;
-    width: 80%;
+    display: none;
   }
 
   .firstdiv {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 130px 0;
+    flex-direction: column;
+    justify-content: center;
     gap: 152px;
     position: absolute;
-    width: 1157.46px;
     height: 596px;
     left: 141px;
-    top: 3279px;
+    border-top: 2px solid #dedbda;
   }
 
   .firstlang {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: absolute;
     padding: 0;
     gap: 24px;
     margin-left: 50px;
@@ -1809,9 +1872,10 @@ button:disabled {
     height: 24px;
     font-family: 'InaiMathi', sans-serif;
     font-style: normal;
+    position: absolute;
     font-weight: 700;
     margin-left: 90px;
-    margin-top: 100px;
+    margin-top: 120px;
     font-size: 32px;
     line-height: 44px;
     display: flex;
@@ -1822,8 +1886,9 @@ button:disabled {
   .firstlang img {
     width: 18px;
     height: 18px;
+    position: absolute;
     margin-left: -130px;
-    margin-top: -44px;
+    margin-top: 120px;
     background: #ff6b00;
     transform: rotate(-45deg);
   }
@@ -1833,9 +1898,10 @@ button:disabled {
     flex-direction: column;
     align-items: center;
     padding: 0 12px;
+    position: absolute;
     gap: 20px;
-    margin-left: 100px;
-    margin-top: 20px;
+    margin-left: 160px;
+    margin-top: 204px;
     width: 186px;
     height: 216px;
   }
@@ -1859,10 +1925,10 @@ button:disabled {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: absolute;
     padding: 0;
     gap: 24px;
     margin-left: 40%;
-    margin-top: -15%;
     width: 282px;
     height: 336px;
   }
@@ -1872,8 +1938,10 @@ button:disabled {
     height: 24px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
+    position: absolute;
     font-weight: 700;
     font-size: 32px;
+    margin-top: 30px;
     line-height: 44px;
     display: flex;
     align-items: center;
@@ -1883,14 +1951,15 @@ button:disabled {
 
   .secondlang img {
     margin-left: -270px;
-    margin-top: -20%;
+    position: absolute;
   }
 
   .fream {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 100px;
+    margin-left: 100px;
     padding: 0 12px;
     gap: 25px;
     width: 186px;
@@ -1915,17 +1984,19 @@ button:disabled {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0;
+    padding: 10px;
     gap: 24px;
+    position: absolute;
     margin-left: 70%;
-    margin-top: -30%;
+    margin-top: 10%;
     width: 282px;
     height: 336px;
   }
 
   .thirdlang img {
-    margin-left: -10%;
-    margin-top: -48px;
+    margin-left: 10%;
+    margin-top: 20px;
+    position: absolute;
   }
 
   .skills {
@@ -1933,10 +2004,12 @@ button:disabled {
     height: 24px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
+    position: absolute;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
-    margin-left: 10%;
+    margin-top: 20px;
+    margin-left: 19%;
     display: flex;
     align-items: center;
     color: #fff;
@@ -1945,10 +2018,8 @@ button:disabled {
   .skill {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 0 12px;
     gap: 30px;
-    margin-top: 20px;
+    margin-top: 60px;
     width: 267px;
     height: 272px;
   }
@@ -1956,12 +2027,13 @@ button:disabled {
   .skill li {
     width: 300px;
     height: 24px;
+    display: flex;
+    flex-direction: column;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 43px;
-    display: flex;
     align-items: center;
     text-align: center;
     color: #fff;
@@ -1987,7 +2059,7 @@ button:disabled {
     font-size: 32px;
     line-height: 44px;
     margin-top: 20%;
-    margin-left: 20px;
+    margin-left: 70px;
     text-align: center;
     color: #172b4d;
   }
@@ -1998,10 +2070,10 @@ button:disabled {
     align-items: center;
     padding: 0;
     gap: 24px;
-    width: 100%;
+    width: 100px;
     height: 330px;
-    margin-top: -15%;
-    margin-left: 20%;
+    margin-top: 22%;
+    margin-left: 55%;
   }
 
   form label {
@@ -2019,13 +2091,13 @@ button:disabled {
   }
 
   .input_name {
-    width: 327px;
+    width: 400px;
     height: 20px;
     border-bottom: 1px solid #cfd8dc;
   }
 
   .input_mail {
-    width: 327px;
+    width: 400px;
     height: 20px;
     border-bottom: 1px solid #cfd8dc;
   }
@@ -2049,7 +2121,7 @@ button:disabled {
   }
 
   .message_box {
-    width: 327px;
+    width: 400px;
     height: 170px;
     margin-top: 18px;
     background: #fbf8f7;
@@ -2060,6 +2132,7 @@ button:disabled {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
     padding: 12px;
     gap: 10px;
     width: 131px;
@@ -2120,7 +2193,7 @@ button:disabled {
     width: 131px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     letter-spacing: 0.03em;
     border: #fff;
     color: #fff;
@@ -2148,9 +2221,9 @@ button:disabled {
 
   .lastss {
     position: absolute;
-    width: 100%;
+    width: 100px;
     height: 72px;
-    top: 700px;
+    top: 450px;
     margin-left: 40%;
   }
 
@@ -2171,6 +2244,7 @@ button:disabled {
     padding: 8px;
     width: 40px;
     height: 40px;
+    cursor: pointer;
   }
 
   .lastss img {
