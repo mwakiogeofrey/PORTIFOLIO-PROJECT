@@ -1254,6 +1254,14 @@ button:disabled {
     color: #fff;
     animation-duration: 3s;
    animation-name: slidein;
+   transition: width 2s, height 2s, color 2s, rotate 2s;
+  }
+
+  .logo:hover {
+    color: violet;
+    width: 100%;
+    height: 24px;
+    rotate: 360deg;
   }
 
   
