@@ -525,7 +525,7 @@
   cursor: pointer;
 }
 
-.projectorange {
+.projectorange11 {
   display: flex;
   flex-direction: row;
   padding: 12px;
@@ -541,17 +541,17 @@
   background: #ff6b00;
 }
 
-.projectorange:hover {
+.projectorange11:hover {
   background: #f0d1bb;
   cursor: pointer;
 }
 
-.projectorange:enabled {
+.projectorange11:enabled {
   background: #ff6b00;
   cursor: pointer;
 }
 
-.projectorange:disabled {
+.projectorange11:disabled {
   background: #fff;
   cursor: pointer;
 }
@@ -1699,7 +1699,7 @@ button:disabled {
     background: rgba(255, 255, 255, 0.24);
   }
 
-  .projectorange {
+  .projectorange11 {
     width: 24.8%;
     margin-left: 20px;
     margin-top: 35.5%;
@@ -1707,6 +1707,30 @@ button:disabled {
     display: flex;
     flex-direction: row;
     position: absolute;
+    text-align: center;
+  }
+
+  .projectorange11:active {
+    background: #f76504;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .seeproject11:enabled {
+    background: #f76504;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .projectorange11:hover {
+    background: #fa5706;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .seeproject11:disabled {
+    background: #ff6b00;
+    color: black;
   }
 
   .orange {
@@ -1720,6 +1744,21 @@ button:disabled {
     text-align: center;
     letter-spacing: 0.03em;
     color: #fff;
+  }
+
+  .orange11:enabled {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .orange:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .orange:disabled {
+    color: black;
+    cursor: pointer;
   }
 
   .projectorange1 {
