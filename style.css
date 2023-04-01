@@ -1253,8 +1253,8 @@ button:disabled {
     margin-top: 10px;
     color: #fff;
     animation-duration: 3s;
-   animation-name: slidein;
-   transition: width 2s, height 2s, color 2s, rotate 2s;
+    animation-name: slidein;
+    transition: width 2s, height 2s, color 2s, rotate 2s;
   }
 
   .logo:hover {
@@ -1264,18 +1264,17 @@ button:disabled {
     rotate: 360deg;
   }
 
-  
-@keyframes slidein {
-  from {
-    margin-left: 10%;
-    width: 100%;
-  }
+  @keyframes slidein {
+    from {
+      margin-left: 900%;
+      width: 100%;
+    }
 
-  to {
-    margin-left: 2%;
-    width: 100%;
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
-}
 
   .selection-bar {
     display: flex;
