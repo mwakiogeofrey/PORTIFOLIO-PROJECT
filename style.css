@@ -1526,7 +1526,7 @@ button:disabled {
   .storyfull {
     background-image: none;
     display: grid;
-    grid-template-columns: 29% 29% 29%;
+    grid-template-columns: 30% 30% 30%;
     grid-template-rows: 435px 435px;
     gap: 3%;
     margin-left: 1%;
@@ -1546,7 +1546,7 @@ button:disabled {
   }
 
   .one {
-    width: 327px;
+    width: 29%;
     height: auto;
     background-image: url("images/Img\ Placeholder\ \(1\).png");
     background-repeat: no-repeat;
@@ -1555,28 +1555,28 @@ button:disabled {
   }
 
   .two {
-    width: 327px;
+    width: 29%;
     height: auto;
     background-image: url("images/Mask\ Group\ \(1\).png");
     background-repeat: no-repeat;
   }
 
   .three {
-    width: 327px;
+    width: 29%;
     height: auto;
     background-image: url("images/Mask\ Group\ \(2\).png");
     background-repeat: no-repeat;
   }
 
   .four {
-    width: 327px;
+    width: 29%;
     height: auto;
     background-image: url("images/Mask\ Group\ \(2\).png");
     background-repeat: no-repeat;
   }
 
   .five {
-    width: 327px;
+    width: 29%;
     height: auto;
     background-image: url("images/Mask\ Group\ \(1\).png");
     background-repeat: no-repeat;
@@ -1597,7 +1597,7 @@ button:disabled {
     font-weight: 400;
     font-size: 38px;
     line-height: 44px;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-left: 20px;
     color: #fff;
   }
@@ -1610,7 +1610,7 @@ button:disabled {
     font-weight: 400;
     font-size: 38px;
     line-height: 44px;
-    margin-top: 18%;
+    margin-top: 15%;
     margin-left: 20px;
     color: #fff;
   }
@@ -1657,7 +1657,7 @@ button:disabled {
   .daily11 {
     width: 250px;
     height: 99px;
-    margin-top: 250px;
+    margin-top: 200px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1674,7 +1674,7 @@ button:disabled {
     padding: 0;
     gap: 12px;
     list-style: none;
-    margin-top: 400px;
+    margin-top: 332px;
     margin-left: 20px;
     width: 100px;
     height: 40px;
@@ -1700,13 +1700,11 @@ button:disabled {
     display: flex;
     position: absolute;
     flex-direction: row;
-    margin-top: -0.5%;
-    width: 26.7%;
+    justify-content: center;
+    align-content: flex-start;
+    width: 26.8%;
     height: 28px;
-    justify-content: flex-start;
-
-    /* Theme 3 / Primary 1 */
-
+    margin-left: 0.3%;
     background: #ff6b00;
   }
 
@@ -1738,7 +1736,7 @@ button:disabled {
     display: flex;
     align-items: center;
     text-align: center;
-    margin-left: 100px;
+    margin-left: 50px;
     letter-spacing: 0.03em;
 
     /* Theme 2 / Neutral 11 */
