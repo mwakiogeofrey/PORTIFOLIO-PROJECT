@@ -1252,7 +1252,22 @@ button:disabled {
     margin-left: 20px;
     margin-top: 10px;
     color: #fff;
+    animation-duration: 3s;
+   animation-name: slidein;
   }
+
+  
+@keyframes slidein {
+  from {
+    margin-left: 10%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 2%;
+    width: 100%;
+  }
+}
 
   .selection-bar {
     display: flex;
