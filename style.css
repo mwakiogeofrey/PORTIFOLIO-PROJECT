@@ -1548,13 +1548,10 @@ button:disabled {
   .one {
     width: 327px;
     height: auto;
-    background-image: url("images/Card\ Works.png");
+    background-image: url("images/Img\ Placeholder\ \(1\).png");
     background-repeat: no-repeat;
+    background-size: cover;
     cursor: pointer;
-  }
-
-  .one:hover {
-    border: 3px solid blue;
   }
 
   .two {
@@ -1699,70 +1696,69 @@ button:disabled {
     background: rgba(255, 255, 255, 0.24);
   }
 
-  .projectorange11 {
-    width: 24.8%;
-    margin-left: 20px;
-    margin-top: 35.5%;
-    height: 31px;
+  .projectorange1 {
     display: flex;
-    flex-direction: row;
     position: absolute;
-    text-align: center;
-  }
+    flex-direction: row;
+    margin-top: -0.5%;
+    width: 26.7%;
+    height: 28px;
+    justify-content: flex-start;
 
-  .projectorange11:active {
-    background: #f76504;
-    color: #fff;
-    cursor: pointer;
-  }
+    /* Theme 3 / Primary 1 */
 
-  .seeproject11:enabled {
-    background: #f76504;
-    color: #fff;
-    cursor: pointer;
-  }
-
-  .projectorange11:hover {
-    background: #fa5706;
-    color: #fff;
-    cursor: pointer;
-  }
-
-  .seeproject11:disabled {
     background: #ff6b00;
-    color: black;
+  }
+
+  .projectorange1:hover {
+    background: #f0d1bb;
+    cursor: pointer;
+    color: #000;
+  }
+
+  .projectorange1:enabled {
+    background: #ff6b00;
+    cursor: pointer;
+  }
+
+  .projectorange1:disabled {
+    background: #fff;
+    cursor: pointer;
   }
 
   .orange {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 24px;
+
+    /* identical to box height, or 141% */
+
     display: flex;
     align-items: center;
     text-align: center;
+    margin-left: 100px;
     letter-spacing: 0.03em;
+
+    /* Theme 2 / Neutral 11 */
+
     color: #fff;
   }
 
-  .orange11:enabled {
+  .orange:enabled {
     color: #fff;
     cursor: pointer;
   }
 
   .orange:hover {
-    color: #fff;
+    color: #000;
     cursor: pointer;
   }
 
   .orange:disabled {
     color: black;
     cursor: pointer;
-  }
-
-  .projectorange1 {
-    display: none;
   }
 
   .box4 {
