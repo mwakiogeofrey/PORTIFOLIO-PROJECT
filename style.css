@@ -1,10 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  margin-right: 0;
 }
 
 .container {
   display: flex;
+  margin: 0;
 }
 
 .box1 {
@@ -249,6 +251,7 @@
   padding: 0;
   gap: 12px;
   list-style: none;
+  float: left;
   width: 314px;
   height: 40px;
 }
@@ -279,6 +282,7 @@
   align-items: center;
   padding: 12px;
   margin-top: 20px;
+  margin-top: 50px;
   gap: 10px;
   width: 100px;
   height: 24px;
@@ -820,4 +824,247 @@
   align-items: center;
   text-align: center;
   color: #fff;
+}
+
+.box5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  width: 375px;
+  height: 800px;
+  margin: 0;
+  top: 5887px;
+}
+
+.alway {
+  width: 327px;
+  height: 216px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin-top: 120px;
+  margin-left: 20px;
+
+  /* or 138% */
+
+  text-align: center;
+
+  /* Neutrals/N800 */
+
+  color: #172b4d;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 24px;
+  width: 327px;
+  height: 330px;
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
+form label {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  gap: 24px;
+  font-size: 15px;
+  line-height: 24px;
+
+  /* or 160% */
+
+  /* Theme 3 / Neutral 6 */
+
+  color: #979493;
+}
+
+form input {
+  border: 0;
+}
+
+.input_name {
+  width: 327px;
+  height: 20px;
+  border-bottom: 1px solid #cfd8dc;
+}
+
+.input_mail {
+  width: 327px;
+  height: 20px;
+  border-bottom: 1px solid #cfd8dc;
+}
+
+::placeholder {
+  color: #172b4d;
+  font-size: 17px;
+  padding: 15px 16px;
+}
+
+textarea::placeholder {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+
+  /* or 160% */
+
+  /* Theme 3 / Neutral 2 */
+
+  color: #3c3a39;
+}
+
+.message_box {
+  width: 327px;
+  height: 170px;
+  margin-top: 18px;
+
+  /* Theme 3 / Neutral 10 */
+
+  background: #fbf8f7;
+  border: 0;
+}
+
+.touch_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 131px;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+
+  /* identical to box height, or 141% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  /* Theme 2 / Neutral 11 */
+}
+
+.touch_btn:enabled {
+  background: #ff6b00;
+  color: #fff;
+}
+
+.touch_btn:hover {
+  background: #eee6e0;
+  color: #ff6b00;
+}
+
+.touch_btn:active {
+  background: #000;
+  color: #fff;
+}
+
+.touch_btn:disabled {
+  background: #e5e5e5;
+  color: #000;
+}
+
+.touch_text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #dfe1e6;
+}
+
+.button {
+  padding-left: 20px;
+}
+
+button {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+
+  /* identical to box height, or 141% */
+  height: 48px;
+  margin-top: 20px;
+  width: 131px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  border: #fff;
+  color: #fff;
+  border-radius: 2px;
+  background: #f76504;
+}
+
+button:active {
+  background: #f76504;
+  cursor: pointer;
+  color: #fff;
+}
+
+button:hover {
+  background: #f0d1bb;
+  cursor: pointer;
+  color: #fa5706;
+}
+
+button:disabled {
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.lastss {
+  position: absolute;
+  width: 375px;
+  height: 72px;
+  top: 800px;
+}
+
+.ooh {
+  margin-top: 15px;
+}
+
+.lastss ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+.lastss ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+}
+
+.lastss img {
+  margin-left: 100px;
+  margin-top: 100px;
+  width: 200px;
 }
