@@ -1,87 +1,65 @@
-# PORTIFOLIO-PROJECT
+<a name="readme-top"></a>
 
+<div align="center">
+  <h3><b>Personal Portfolio Project</b></h3>
 
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
+</div>
 
-OPTIONAL SECTIONS:
-- FAQ
+<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
+<!-- PROJECT DESCRIPTION -->
 
+# 📖 Portfolio Project <a name="about-project"></a>
 
-# 📖 [PORTFOLIO-PROJECT] <a name="about-project"></a>
+** Portfolio Project:** The Personal Portfolio project served as a platform for me to demonstrate my technical proficiency and present my projects in a compelling manner to potential employers.
 
-Myproject is about creating a mobile portfolio  skeleton   using css and html file and making sure there is no linters error
+## 🛠 Built With <a name="built-with"></a>
 
-**[PORTFOLIO-PROJECT]** is a...
-The project contain images ,html,css, linters, and gitignore file to ingore nodemudels folder
-<details>
-  <summary>Client</summary>
   <ul>
-    <li><a href="https://css.org/">css</a></li>
+    <li>HTML</li>
+    <li>CSS</li>
   </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://html.com/">html</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.googlefonts.org/">googlefonts</a></li>
-  </ul>
-</details>
-
-### Key Features 
-
-- **[linters]**
-- **[package.json]**
-- **[.hintrc]**
 
 
-## 🚀 Live Demo 
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
 
 
-- [Live Demo Link](https://google.com)
-coming soon...
+- [X] **[Mobile-Responsive]**
+- [X] **[Tablet-Responsive]**
+- [X] **[Desktop-Responsive]**
 
-## 💻 Getting Started 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://mwakiogeofrey.github.io/PORTIFOLIO-PROJECT/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
 
@@ -89,158 +67,93 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
 
-```sh
-vscode
-gitbush
-github
-live server
-npm init -y
 ```
- -->
+   https code:
+   https://github.com/mwakiogeofrey/PORTIFOLIO-PROJECT.git
+```
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
-```sh
-  cd my-folder
- git clone https://github.com/mwakiogeofrey/LINTERS-PROJECT.git
 ```
---->
-
-### Install
-
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
+  cd desired-folder
+  https://github.com/mwakiogeofrey/PORTIFOLIO-PROJECT.git
 ```
---->
-
-### Usage
-
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  live server
-```
---->
-
-### Run tests
-
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  npx stylelint "**/*.{css,scss}"
-
-```
---->
 
 ### Deployment
 
-You can deploy this project using:
+You can deploy this project using **Github-Pages**. In order to make your project live on Github, you'll want to push your updated repo by using these commands:
 
-<!--
-Example:
 
-```sh
-google chrome
 ```
- -->
+git add --all or git add .
+
+```
+```
+git commit -m "your commit message"
+
+```
+```
+git push -u origin {i.e, your repo name}
+
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
-👤 **Author1**
+👤 **mwakiogeofrey**
 
 - GitHub: [@githubhandle](https://github.com/mwakiogeofrey)
-- Twitter: [@twitterhandle](@mwakiogeofrey)
-- LinkedIn: [LinkedIn](www.linkedin.com/in/
-geofrey-mwakio-aab09424b
-
-)
-
-
+- Twitter: [@twitterhandle](https://twitter.com/MwakioGeofrey)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/
+geofrey-mwakio-aab09424b)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[improved mobile version]**
-- [ ] **[desktop version]**
-- [ ] **[tablet version]**
+- [X] **[Updated-HTML]**
+- [X] **[Modified-CSS-Style]**
+- [ ] **[JavaScript-Interactivity]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome
+Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/mwakiogeofrey/PORTIFOLIO-PROJECT/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+Please support this project and be a part of something meaningful and impactful. Your contribution can make a significant difference and help us achieve our goals faster.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
+<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thankmy mentor
+To all the individuals whose creativity and dedication inspired the codebase, I want to express my heartfelt gratitude. Your tireless efforts have left an indelible mark on this project and your contributions will be remembered for years to come. Thank you for being an integral part of our success.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-->
-
+<!-- LICENSE -->
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
