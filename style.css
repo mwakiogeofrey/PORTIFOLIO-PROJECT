@@ -1,14 +1,17 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   height: auto;
 }
 
@@ -251,7 +254,7 @@
   padding-bottom: 20px;
 }
 
-.lang li {
+.lang li a {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -260,16 +263,16 @@
   align-items: center;
   justify-content: center;
   padding: 10px 12px;
-  width: 48px;
+  gap: 12px;
+  border: 2px solid #979493;
+  width: auto;
   height: auto;
+  text-decoration: none;
+  color: #262626;
 
   /* Neutrals/N0 */
 
   background: #fff;
-
-  /* Neutrals/N90 */
-
-  border: 1px solid #8993a4;
 }
 
 .seeproject {
@@ -337,7 +340,7 @@
 }
 
 .one {
-  width: 327;
+  width: 327px;
   height: 386px;
 }
 
@@ -436,18 +439,6 @@
   color: #fff;
 }
 
-.langu11 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0;
-  gap: 12px;
-  list-style: none;
-  margin-top: 120%;
-  width: auto;
-  height: 40px;
-}
-
 .langu1 {
   display: flex;
   flex-direction: row;
@@ -461,32 +452,22 @@
   height: 40px;
 }
 
-.langu11 li {
-  width: auto;
-  height: auto;
-  display: grid;
-  flex-direction: row;
-  align-items: center;
+.langu1 li {
   color: #fff;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  padding: 10px 12px;
-  margin-bottom: 20px;
-  background: rgba(255, 255, 255, 0.24);
+  text-decoration: none;
 }
 
-.langu1 li {
+.langu1 li a {
   width: auto;
   height: auto;
   display: grid;
   flex-direction: row;
   align-items: center;
+  text-decoration: none;
   color: #fff;
   font-family: 'Inter', sans-serif;
   font-style: normal;
+  border-radius: 2px;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -500,7 +481,7 @@
   flex-direction: row;
   padding: 12px;
   position: relative;
-  width: 303px;
+  width: 100%;
   margin-top: 10px;
   height: 28px;
   justify-content: flex-start;
@@ -521,37 +502,6 @@
 }
 
 .projectorange1:disabled {
-  background: #fff;
-  cursor: pointer;
-}
-
-.projectorange11 {
-  display: flex;
-  flex-direction: row;
-  padding: 12px;
-  gap: 10px;
-  position: absolute;
-  width: 303px;
-  margin-left: -45px;
-  margin-top: 10px;
-  height: 28px;
-
-  /* Theme 3 / Primary 1 */
-
-  background: #ff6b00;
-}
-
-.projectorange11:hover {
-  background: #f0d1bb;
-  cursor: pointer;
-}
-
-.projectorange11:enabled {
-  background: #ff6b00;
-  cursor: pointer;
-}
-
-.projectorange11:disabled {
   background: #fff;
   cursor: pointer;
 }
@@ -655,8 +605,9 @@
   gap: 10px;
   margin-left: 10%;
   margin-top: 10%;
-  width: 134px;
+  width: auto;
   height: auto;
+  border-radius: 2px;
 
   /* Theme 3 / Primary 1 */
 
@@ -718,7 +669,7 @@
   justify-content: flex-start;
   margin-left: 64.5%;
   right: 0;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .mobile1 {
@@ -798,16 +749,19 @@
 }
 
 .alllang li {
+  list-style: none;
+}
+
+.alllang li a {
   width: auto;
+  text-decoration: none;
   height: 24px;
+  list-style: none;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 43px;
-
-  /* or 194% */
-
   display: flex;
   align-items: center;
   text-align: center;
@@ -846,7 +800,6 @@
 .secondlang img {
   position: absolute;
   margin-left: -270px;
-  margin-top: 30px;
 }
 
 .fream {
@@ -861,6 +814,10 @@
 }
 
 .fream li {
+  list-style: none;
+}
+
+.fream li a {
   width: auto;
   height: 24px;
   font-family: 'Inter', sans-serif;
@@ -868,6 +825,7 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 43px;
+  text-decoration: none;
 
   /* or 194% */
 
@@ -892,7 +850,6 @@
 .thirdlang img {
   position: absolute;
   margin-left: -150px;
-  margin-top: 40px;
 }
 
 .skills {
@@ -923,12 +880,17 @@
 }
 
 .skill li {
+  list-style: none;
+}
+
+.skill li a {
   width: auto;
   height: 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
+  text-decoration: none;
   line-height: 43px;
 
   /* or 194% */
@@ -1166,10 +1128,6 @@ button:disabled {
   margin-top: 130px;
 }
 
-.ooh {
-  margin-top: 15px;
-}
-
 .lastss ul {
   display: flex;
   flex-direction: row;
@@ -1178,21 +1136,28 @@ button:disabled {
   position: absolute;
   width: 200px;
   height: 40px;
-  margin-top: -50px;
-  margin-left: -50px;
+  margin-top: 10%;
+  margin-left: 10%;
 }
 
 .lastss ul li {
+  color: #505f79;
+  list-style: none;
+  font-size: x-large;
+}
+
+.lastss ul a {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 8px;
   width: 40px;
   height: 40px;
+  color: #505f79;
 }
 
 .lastss img {
-  margin-left: 100px;
+  margin-left: 50px;
   margin-top: 100px;
   width: 200px;
 }
@@ -1225,7 +1190,7 @@ button:disabled {
     align-items: flex-start;
     background-image: url("images/Illustration-header.png");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position-x: right;
     background-size: contain;
     position: absolute;
     width: 100%;
@@ -1266,7 +1231,7 @@ button:disabled {
 
   @keyframes slidein {
     from {
-      margin-left: 900%;
+      margin-left: 50%;
       width: 100%;
     }
 
@@ -1489,7 +1454,7 @@ button:disabled {
     margin-left: 110px;
   }
 
-  .lang li {
+  .lang li a {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -1500,6 +1465,7 @@ button:disabled {
     width: auto;
     height: auto;
     background: #fff;
+    border-radius: 2px;
     border: 1px solid #8993a4;
   }
 
@@ -1510,8 +1476,8 @@ button:disabled {
     padding: 12px;
     position: absolute;
     gap: 2px;
-    width: 100px;
-    height: 24px;
+    width: auto;
+    height: auto;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -1612,79 +1578,27 @@ button:disabled {
   }
 
   .oneonone {
-    width: 327px;
+    width: 29%;
     height: auto;
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 38px;
-    line-height: 44px;
-    margin-top: 100px;
-    margin-left: 20px;
-    color: #fff;
-  }
-
-  .oneontwo {
-    width: 327px;
-    height: auto;
-    font-family: 'Crete Round', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 38px;
-    line-height: 44px;
-    margin-top: 15%;
-    margin-left: 20px;
-    color: #fff;
-  }
-
-  .oneonthree {
-    width: 295px;
-    height: 81px;
-    font-family: 'Crete Round', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 44px;
-    margin-top: 180px;
-    margin-left: 20px;
-    color: #fff;
-  }
-
-  .oneonfour {
-    width: 295px;
-    height: 81px;
-    font-family: 'Crete Round', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 44px;
-    margin-top: 180px;
-    margin-left: 20px;
-    color: #fff;
-  }
-
-  .oneonsix {
-    width: 295px;
-    height: 81px;
-    font-family: 'Crete Round', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 44px;
-    margin-top: 180px;
-    margin-left: 20px;
+    line-height: 35px;
+    margin-top: 10%;
+    margin-left: 1%;
     color: #fff;
   }
 
   .daily11 {
-    width: 250px;
-    height: 99px;
-    margin-top: 200px;
+    width: 29%;
+    height: auto;
+    margin-top: 20%;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
     margin-left: 20px;
     color: #fff;
   }
@@ -1702,7 +1616,7 @@ button:disabled {
     height: 40px;
   }
 
-  .langu1 li {
+  .langu1 li a {
     width: auto;
     height: auto;
     display: grid;
@@ -1724,9 +1638,9 @@ button:disabled {
     flex-direction: row;
     justify-content: center;
     align-content: flex-start;
-    width: 26.8%;
-    height: 28px;
-    margin-left: 0.3%;
+    margin-top: 5vh;
+    width: 29%;
+    height: 40px;
     background: #ff6b00;
   }
 
@@ -1842,7 +1756,7 @@ button:disabled {
     gap: 10px;
     margin-left: 80px;
     margin-top: 40px;
-    width: 134px;
+    width: auto;
     border-radius: 3px;
     height: auto;
     background: #fb6b05;
@@ -1941,7 +1855,7 @@ button:disabled {
     position: absolute;
     font-weight: 700;
     margin-left: 90px;
-    margin-top: 120px;
+    margin-top: 100px;
     font-size: 32px;
     line-height: 44px;
     display: flex;
@@ -1954,7 +1868,6 @@ button:disabled {
     height: 18px;
     position: absolute;
     margin-left: -130px;
-    margin-top: 120px;
     background: #ff6b00;
     transform: rotate(-45deg);
   }
@@ -1972,7 +1885,7 @@ button:disabled {
     height: 216px;
   }
 
-  .alllang li {
+  .alllang li  {
     width: 300px;
     height: 24px;
     font-family: 'Inter', sans-serif;
@@ -2007,7 +1920,6 @@ button:disabled {
     position: absolute;
     font-weight: 700;
     font-size: 32px;
-    margin-top: 30px;
     line-height: 44px;
     display: flex;
     align-items: center;
@@ -2061,7 +1973,6 @@ button:disabled {
 
   .thirdlang img {
     margin-left: 10%;
-    margin-top: 20px;
     position: absolute;
   }
 
@@ -2074,7 +1985,6 @@ button:disabled {
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
-    margin-top: 20px;
     margin-left: 19%;
     display: flex;
     align-items: center;
@@ -2272,7 +2182,7 @@ button:disabled {
     justify-content: center;
     position: absolute;
     height: 40px;
-    margin-top: -50px;
+    text-decoration: none;
   }
 
   .lastss ul li {
@@ -2283,6 +2193,7 @@ button:disabled {
     width: 40px;
     height: 40px;
     cursor: pointer;
+    text-decoration: none;
   }
 
   .lastss img {
