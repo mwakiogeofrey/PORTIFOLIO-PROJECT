@@ -9,7 +9,11 @@ document.addEventListener('DOMContentLoaded', function(){
       logo.classList.toggle('active');
     };
   
-
+window.onscroll = () => {
+      menuIcon.classList.remove('uil-multiply');
+      navbar.classList.remove('active');
+      logo.classList.remove('active');
+    };
 })
    
 
