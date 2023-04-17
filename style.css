@@ -45,10 +45,10 @@ header .logo {
 }
 
 #menuIcon {
-  color: #fff;
+  color: #f7f7f7;
   font-size: 1.75rem;
   font-weight: 700;
-  display: none;
+   display: none;
 }
 
 .navbar a {
@@ -144,12 +144,14 @@ h1 {
 }
 
 .socialmedia ul {
-  width: 12.5rem;
-  display: flex;
-  margin-top: 30px;
-  justify-content: space-around;
+  display: inline-flex;
+  
+  margin-top: 30px
 }
-
+.socialmedia li {
+  display: flex;
+ margin: 0;
+}
 /* background image for headline */
 .background-img {
   background-image: url('images/Group.png');
@@ -239,8 +241,90 @@ h1 {
     padding-bottom: 0;
     padding-right: 1rem;
   }
+
 }
 
+#windor {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 80%;
+  transform: translate(-50% -50% scale(0.1));
+
+  background-color: #fff;
+  display: none;
+}
+.open-windor {
+  visibility: visible;
+  transform: translate(-50% -50% scale(1));
+}
+
+#windor h1 {
+  font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 700;
+margin-top: 2%;
+font-size: 32px;
+line-height: 44px;
+color: #172B4D;
+}
+
+#languages {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  gap: 12px;
+}
+
+#languages li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  width: auto;
+  height: 30px;
+  
+  
+}
+
+.windors {
+  display: flex;
+  position: absolute;
+  align-items: flex-end;
+  right: 0;
+  top: 0;
+  font-size: 40px;
+  justify-content: flex-end;
+  cursor: pointer;;
+}
+
+#popup-windor p {
+  margin-top: 10px;
+}
+#see-popup {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+
+}
+
+
+#see-popup li {
+  width: auto;
+  margin-left: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  color: #fff;
+  background-color: #ed7a00;
+}
+
+#see-popup li img {
+  gap: 5px;
+}
 /* container for work1 */
 .work1 {
   display: grid;
@@ -296,9 +380,10 @@ h1 {
   margin-right: 0.75rem;
 }
 
-.work1Link {
+.worker {
   background-color: #fa6d09;
   border: none;
+  outline: none;
   color: #fff;
   padding: 0.75rem;
   text-align: center;
@@ -308,18 +393,16 @@ h1 {
 }
 
 /* link button styles */
-.work1Link:focus {
-  background-color: #051736;
-}
 
-.work1Link:hover {
+
+.worker:hover {
   background-color: #fff;
   border: 2px solid #091e42;
   color: #090909;
   transition: 0.5s;
 }
 
-.work1Link:disabled {
+.worker:disabled {
   background-color: #f4f1f0;
   border: none;
   color: #5b5957;
@@ -356,11 +439,13 @@ h1 {
   display: flex;
   flex-direction: column;
   margin-top: 1.5rem;
-  background-image:
-    linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),
-    url("images/Mask\ Group.png");
+  background-image:url("images/Mask\ Group.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+.work2:hover {
+  background-image: url("images/Mask\ Group\ \(1\).png");
+  cursor: pointer;
 }
 
 .work2Info {
@@ -456,11 +541,8 @@ h1 {
 
   .work2 {
     width: 23.2rem;
-    background-image: url("images/Mask\ Group\ \(2\) .png");
-  }
-
-  .projectLink {
-    visibility: hidden;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .work2Info {
@@ -473,12 +555,8 @@ h1 {
   }
 
   .work2:hover {
-    background-image: url("images/Mask\ Group\ \(1\) .png");
+    background-image: url("images/Mask\ Group\ \(1\).png");
     cursor: pointer;
-  }
-
-  .work2:hover .work2Info {
-    visibility: hidden;
   }
 
   .work2:hover .projectLink {

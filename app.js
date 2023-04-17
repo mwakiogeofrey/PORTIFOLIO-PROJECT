@@ -14,4 +14,5 @@ document.addEventListener('DOMContentLoaded', () => {
     navbar.classList.remove('active');
     logo.classList.remove('active');
   };
+
 });
