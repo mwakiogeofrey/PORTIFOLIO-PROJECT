@@ -76,7 +76,7 @@ header .logo {
     top: 100%;
     left: 0;
     width: 100%;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     background-color: #3c3a39;
     display: none;
   }
@@ -91,7 +91,7 @@ header .logo {
 
   .navbar a {
     display: block;
-    padding: 2rem;
+    padding: 0.5rem;
     font-size: 2rem;
     border-bottom: 1px solid #6f6c6b;
   }
