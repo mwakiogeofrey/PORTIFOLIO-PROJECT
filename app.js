@@ -1,27 +1,24 @@
+const menuIcon = document.querySelector('#menuIcon');
 
-  const menuIcon = document.querySelector('#menuIcon');
-  
-  const navbar = document.querySelector('.navbar');
-  const logo = document.querySelector('.logo');
+const navbar = document.querySelector('.navbar');
+const logo = document.querySelector('.logo');
 
-  menuIcon.onclick = () => {
-    menuIcon.classList.toggle('uil-multiply');
-    navbar.classList.toggle('active');
-    logo.classList.toggle('active');
-  };
+menuIcon.onclick = () => {
+  menuIcon.classList.toggle('uil-multiply');
+  navbar.classList.toggle('active');
+  logo.classList.toggle('active');
+};
 
-  window.onscroll = () => {
-    menuIcon.classList.remove('uil-multiply');
-    navbar.classList.remove('active');
-    logo.classList.remove('active');
-  };
+window.onscroll = () => {
+  menuIcon.classList.remove('uil-multiply');
+  navbar.classList.remove('active');
+  logo.classList.remove('active');
+};
 
-
-
-  const works = document.querySelector('.otherWorks');
- const popupArray = [
+const works = document.querySelector('.otherWorks');
+const popupArray = [
   {
-    id:1,
+    id: 1,
     Name: 'Profesional Art Printing Data',
     tital: 'Multi Post Stories',
     tital2: 'Keeping track of hundreds  of components website',
@@ -29,11 +26,11 @@
     description: ' A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
     featureimage: 'images/Snapshoot Portfolio.png',
     technologies: ['HTML', 'CSS', 'Bootstrap'],
-    demoLink: 'https://rahimialijan.github.io/Ecommerce-Website-Full-Responsive/',
-    sourceLink: 'https://github.com/rahimialijan/Ecommerce-Website-Full-Responsive',
+    demoLink: 'https://mwakiogeofrey.github.io/PORTIFOLIO-PROJECT',
+    sourceLink: 'https://github.com/mwakiogeofrey/PORTIFOLIO-PROJECT',
   },
   {
-    id:2,
+    id: 2,
     Name: 'Profesional Art Printing Data',
     tital: 'Multi Post Stories',
     tital2: 'Keeping track of hundreds  of components website',
@@ -42,11 +39,11 @@
     featureimage: 'images/Snapshoot Portfolio.png',
     technologies: ['HTML', 'CSS', 'Bootstrap'],
     button: 'see project',
-    demoLink: 'https://rahimialijan.github.io/Ecommerce-Website-Full-Responsive/',
-    sourceLink: 'https://github.com/rahimialijan/Ecommerce-Website-Full-Responsive',
+    demoLink: 'https://mwakiogeofrey.github.io/PORTIFOLIO-PROJECT',
+    sourceLink: 'https://github.com/mwakiogeofrey/PORTIFOLIO-PROJECT',
   },
   {
-    id:3,
+    id: 3,
     Name: 'Profesional Art Printing Data',
     tital: 'Multi Post Stories',
     tital2: 'Keeping track of hundreds  of components website',
@@ -54,11 +51,11 @@
     description: ' A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
     featureimage: 'images/Snapshoot Portfolio.png',
     technologies: ['HTML', 'CSS', 'Bootstrap'],
-    demoLink: 'https://rahimialijan.github.io/Ecommerce-Website-Full-Responsive/',
-    sourceLink: 'https://github.com/rahimialijan/Ecommerce-Website-Full-Responsive',
+    demoLink: 'https://mwakiogeofrey.github.io/PORTIFOLIO-PROJECT',
+    sourceLink: 'https://github.com/mwakiogeofrey/PORTIFOLIO-PROJECT',
   },
   {
-    id:4,
+    id: 4,
     Name: 'Profesional Art Printing Data',
     tital: 'Multi Post Stories',
     tital2: 'Keeping track of hundreds  of components website',
@@ -66,11 +63,11 @@
     description: ' A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
     featureimage: 'images/Snapshoot Portfolio.png',
     technologies: ['HTML', 'CSS', 'Bootstrap'],
-    demoLink: 'https://rahimialijan.github.io/Ecommerce-Website-Full-Responsive/',
-    sourceLink: 'https://github.com/rahimialijan/Ecommerce-Website-Full-Responsive',
+    demoLink: 'https://mwakiogeofrey.github.io/PORTIFOLIO-PROJECT/',
+    sourceLink: 'https://github.com/mwakiogeofrey/PORTIFOLIO-PROJECT',
   },
   {
-    id:5,
+    id: 5,
     Name: 'Profesional Art Printing Data',
     tital: 'Multi Post Stories',
     tital2: 'Keeping track of hundreds  of components website',
@@ -78,24 +75,26 @@
     description: ' A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
     featureimage: 'images/Snapshoot Portfolio.png',
     technologies: ['HTML', 'CSS', 'Bootstrap'],
-    demoLink: 'https://rahimialijan.github.io/Ecommerce-Website-Full-Responsive/',
-    sourceLink: 'https://github.com/rahimialijan/Ecommerce-Website-Full-Responsive',
+    demoLink: 'https://mwakiogeofrey.github.io/PORTIFOLIO-PROJECT',
+    sourceLink: 'https://github.com/mwakiogeofrey/PORTIFOLIO-PROJECT',
   },
   {
-    id:6,
+    id: 6,
     Name: 'Profesional Art Printing Data',
     tital: 'Multi Post Stories',
     tital2: 'Keeping track of hundreds  of components website',
-    desc:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     description: ' A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
     featureimage: 'images/Snapshoot Portfolio.png',
     technologies: ['HTML', 'CSS', 'Bootstrap'],
-    demoLink: 'https://rahimialijan.github.io/Ecommerce-Website-Full-Responsive/',
-    sourceLink: 'https://github.com/rahimialijan/Ecommerce-Website-Full-Responsive',
+    demoLink: 'https://mwakiogeofrey.github.io/PORTIFOLIO-PROJECT/',
+    sourceLink: 'https://github.com/mwakiogeofrey/PORTIFOLIO-PROJECT',
   }];
- function generatecard (){
- works.innerHTML =popupArray .map((x) => {
-  const{id,Name,desc,description,featureimage,technologies,tital,tital2,demoLink,sourceLink}=x
+function generatecard() {
+  works.innerHTML = popupArray.map((x) => {
+    const {
+      id, Name, desc, description, featureimage, technologies, tital, tital2,
+    } = x;
     return `<div class="work2">
     <div class="work2Info">
         <h3 class="work2Title">
@@ -141,25 +140,26 @@
             <div id="overlay"></div>
             `;
   }).join('');
-};
+}
 generatecard();
 
-const openModalBtn=document.querySelectorAll('[data-modal-target]');
-const closeModalBtn=document.querySelectorAll('[data-close-button]');
-const overlay=document.getElementById('overlay');
-
+const openModalBtn = document.querySelectorAll('[data-modal-target]');
+const closeModalBtn = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('overlay');
+const body = document.getElementById('body');
 
 function openModal(modal) {
   if (modal == null) return;
   modal.classList.add('active');
   overlay.classList.add('active');
+  body.classList.add('active');
 }
 function closeModal(modal) {
   if (modal == null) return;
   modal.classList.remove('active');
   overlay.classList.remove('active');
+  body.classList.remove('active');
 }
-
 
 closeModalBtn.forEach((button) => {
   button.addEventListener('click', () => {
@@ -180,4 +180,3 @@ overlay.addEventListener('click', () => {
     closeModal(modal);
   });
 });
-
