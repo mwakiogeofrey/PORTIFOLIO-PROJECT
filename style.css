@@ -71,7 +71,6 @@ header .logo {
   color: #ff6b00;
 }
 
-
 /* header section adjustments for desktop version */
 @media (max-width: 768px) {
   #menuIcon {
@@ -498,7 +497,6 @@ h1 {
     gap: 20px;
   }
 }
-
 
 /* container for work1 */
 .work1 {
