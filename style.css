@@ -256,10 +256,12 @@ h1 {
 
 #windor {
   display: flex;
-  position: absolute;
+  position: fixed;
   align-items: center;
   flex-direction: column;
-  /* transform: translate(-50%, -50%) scale(1); */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0); 
   top: 60px;
   background: #fff;
   height: 718px;
@@ -293,10 +295,9 @@ h1 {
  }
 }
 
-.windors {
+.windor {
   font-size: 40px;
-  position: absolute;
- right: 0;
+  position: fixed;
   align-items: flex-start;
   display: flex;
   justify-content: flex-end;
@@ -371,12 +372,13 @@ color: #344563;
   
 #windor {
   display: flex;
-  position: absolute;
+  position: fixed;
   width: 90%;
   align-items: center;
   flex-direction: column;
-  transform: translate(-50% -50% scale(1));
-  top: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50% scale(0));
   background: #fff;
   height: 418px;
   
@@ -397,14 +399,12 @@ font-size: 32px;
 color: #172B4D;
 }
 
-.windors {
+.windor {
   font-size: 40px;
-  position: absolute;
- right: 0;
+  position: fixed;
   align-items: flex-start;
   display: flex;
   justify-content: flex-end;
-  transform: translate(-50% -50% scale(0));
 
 }
 

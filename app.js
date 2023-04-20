@@ -16,9 +16,10 @@
     logo.classList.remove('active');
   };
 
+
+
   const works = document.querySelector('.otherWorks');
  const popupArray = [
- 
   {
     id:1,
     Name: 'Profesional Art Printing Data',
@@ -146,37 +147,39 @@ generatecard();
 const openModalBtn=document.querySelectorAll('[data-modal-target]');
 const closeModalBtn=document.querySelectorAll('[data-close-button]');
 const overlay=document.getElementById('overlay');
+var modalPage=document.getElementById('windor');
 
 
-function openModal(windor) {
-  if (windor == null) return;
-  windor.classList.add('active');
+function openModal(modal) {
+  if (modal == null) return;
+  modalPage.classList.add('active');
   overlay.classList.add('active');
+
 }
-function closeModal(windor) {
-  if (windor == null) return;
-  windor.classList.remove('active');
+function closeModal(modal) {
+  if (modal == null) return;
+  modalPage.classList.remove('active');
   overlay.classList.remove('active');
 }
 
 
 closeModalBtn.forEach((button) => {
   button.addEventListener('click', () => {
-    const windor = button.closest('.windor');
-    closeModal(windor);
+    const modal = button.closest('.modal');
+    closeModal(modal);
   });
 });
 openModalBtn.forEach((button) => {
   button.addEventListener('click', () => {
-    const windor = document.querySelector(button.dataset.modalTarget);
-    openModal(windor);
+    const modal = document.querySelector(button.dataset.modalTarget);
+    openModal(modal);
   });
 });
 
 overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.windor.active');
-  modals.forEach((windor) => {
-    closeModal(windor);
+  const modals = document.querySelectorAll('.modal.active');
+  modals.forEach((modal) => {
+    closeModal(modal);
   });
 });
 
