@@ -115,7 +115,7 @@
     </div>
  </div>
 
- <div class="windor" id="windor">
+ <div class="modal" id="modal${id}">
  <button data-close-button class="close-btn">&times;</button>
                 <h1 class="popup-story">${tital}s</h1>
                 <h2 class="keeper">${tital2}</h2>
@@ -147,18 +147,16 @@ generatecard();
 const openModalBtn=document.querySelectorAll('[data-modal-target]');
 const closeModalBtn=document.querySelectorAll('[data-close-button]');
 const overlay=document.getElementById('overlay');
-var modalPage=document.getElementById('windor');
 
 
 function openModal(modal) {
   if (modal == null) return;
-  modalPage.classList.add('active');
+  modal.classList.add('active');
   overlay.classList.add('active');
-
 }
 function closeModal(modal) {
   if (modal == null) return;
-  modalPage.classList.remove('active');
+  modal.classList.remove('active');
   overlay.classList.remove('active');
 }
 
@@ -182,5 +180,4 @@ overlay.addEventListener('click', () => {
     closeModal(modal);
   });
 });
-
 
