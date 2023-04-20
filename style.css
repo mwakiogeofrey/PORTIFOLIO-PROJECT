@@ -387,6 +387,7 @@ color: #344563;
 }
 .modal.active {
   visibility: visible;
+
 }
 
 .close-btn {
@@ -415,8 +416,11 @@ justify-content: flex-end;
 #overlay.active{
   opacity: 1;
   pointer-events: all;
+  
 }
-
+body {
+  overflow-y: hidden;
+}
 
 .keeper {
   margin-top: 23px;
