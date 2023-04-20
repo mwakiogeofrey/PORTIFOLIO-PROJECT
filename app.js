@@ -147,17 +147,20 @@ generatecard();
 const openModalBtn=document.querySelectorAll('[data-modal-target]');
 const closeModalBtn=document.querySelectorAll('[data-close-button]');
 const overlay=document.getElementById('overlay');
+const body=document.getElementById("body")
 
 
 function openModal(modal) {
   if (modal == null) return;
   modal.classList.add('active');
   overlay.classList.add('active');
+  body.classList.add('active')
 }
 function closeModal(modal) {
   if (modal == null) return;
   modal.classList.remove('active');
   overlay.classList.remove('active');
+  body.classList.remove('active')
 }
 
 

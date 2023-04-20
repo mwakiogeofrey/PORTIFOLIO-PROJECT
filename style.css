@@ -12,6 +12,7 @@ html {
 
 body {
   background-color: #1c1a19;
+  overflow-y: hidden;
 }
 
 /* section {
@@ -268,7 +269,8 @@ h1 {
   transform: translate(-50%, -50%) scale(0); 
   background: #fff;
   font-size: 40px;
-  height: 700px;
+  height: 85vh;
+  z-index: 10;
 
 }
 .modal.active {
@@ -383,7 +385,7 @@ color: #344563;
   visibility: hidden;
   background: #fff;
   height: 418px;
-  
+  z-index: 10;
 }
 .modal.active {
   visibility: visible;
