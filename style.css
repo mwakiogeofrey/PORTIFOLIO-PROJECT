@@ -25,7 +25,7 @@ ul {
 
 /* header section style */
 header {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -70,7 +70,6 @@ header .logo {
 .navbar a:hover {
   color: #ff6b00;
 }
-
 
 /* header section adjustments for desktop version */
 @media (max-width: 768px) {
@@ -263,12 +262,13 @@ h1 {
     position: fixed;
     align-items: center;
     flex-direction: column;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     background: #fff;
     font-size: 40px;
-    height: 85vh;
+    width: 90%;
+    height: 90vh;
     z-index: 10;
   }
 
@@ -300,14 +300,16 @@ h1 {
   }
 
   #overlay.active {
-    opacity: 1;
+    overflow-y: hidden;
+    opacity: 5;
     pointer-events: all;
+    background: blur;
   }
 
   .popup-story {
     margin-top: 4%;
     color: #172b4d;
-    width: 269px;
+    width: 80%;
     height: 62px;
     left: 4px;
     font-family: 'Roboto', sans-serif;
@@ -320,6 +322,7 @@ h1 {
   #languages {
     display: flex;
     flex-direction: row;
+    width: 80%;
     left: 0;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -341,9 +344,13 @@ h1 {
     height: 30px;
   }
 
+  .popup-image {
+    width: 80%;
+  }
+
   #loren {
     margin-left: 15px;
-    width: 312px;
+    width: 80%;
     height: 220px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -355,12 +362,19 @@ h1 {
 
   .popup-btn-wrapper {
     margin-top: 20px;
-    gap: 30px;
+    gap: 10px;
+    width: 80%;
+
+    /* top: 80%; */
+    flex-direction: row;
+    display: flex;
   }
 
   .btn-popup-btn {
     color: #fff;
-    width: auto;
+    top: 80%;
+    width: 80%;
+    position: relative;
     padding: 10px;
     margin-left: 30px;
     border: none;
@@ -373,12 +387,13 @@ h1 {
   .modal {
     display: flex;
     position: fixed;
-    width: 90%;
+    width: 85%;
     align-items: center;
     flex-direction: column;
     top: 15%;
     font-size: 40px;
     visibility: hidden;
+    transition: 0.4s ease-in-out;
     background: #fff;
     height: 418px;
     z-index: 10;
@@ -401,7 +416,7 @@ h1 {
 
   #overlay {
     position: fixed;
-    transition: 0.4s ease-in-out;
+    transition: 0.9s ease-in-out;
     opacity: 0;
     top: 0;
     right: 0;
@@ -412,21 +427,22 @@ h1 {
   }
 
   #overlay.active {
-    opacity: 1;
+    opacity: 5;
     pointer-events: all;
+    background: blur;
   }
 
-  body {
+  body.active {
     overflow-y: hidden;
   }
 
   .keeper {
     margin-top: 23px;
-    width: 1056px;
+    width: 98%;
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
-    margin-left: 13%;
+    left: 1%;
     font-size: 32px;
     color: #172b4d;
   }
@@ -441,17 +457,16 @@ h1 {
     flex-direction: row;
     gap: 12px;
     width: 100%;
-    margin-left: 5%;
+    left: 1%;
     margin-top: 1.5%;
   }
 
   .popup-image {
-    margin-top: 15%;
+    top: 30%;
     position: absolute;
-    width: 40%;
-    height: 250px;
-    margin-left: 20px;
-    left: 0;
+    width: 50%;
+    height: 65%;
+    left: 1%;
   }
 
   #languages li {
@@ -470,10 +485,10 @@ h1 {
   }
 
   #loren {
-    width: 424px;
-    margin-left: 40%;
+    width: 40%;
+    margin-left: 48%;
     height: 220px;
-    margin-top: 3%;
+    margin-top: 2%;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -483,9 +498,8 @@ h1 {
   }
 
   .popup-btn-wrapper {
-    margin-left: 18%;
+    margin-left: 30%;
     margin-bottom: 30px;
-    gap: 30px;
   }
 
   .btn-popup-btn {
@@ -498,7 +512,6 @@ h1 {
     gap: 20px;
   }
 }
-
 
 /* container for work1 */
 .work1 {
