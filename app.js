@@ -194,3 +194,33 @@ submit.addEventListener('submit', (e) => {
   }
   return true;
 });
+
+
+const { inputName, email, message } = JSON.parse(
+  localStorage.getItem('formData'),
+);
+
+const formData = {
+  inputName,
+  email,
+  message,
+};
+
+// localstorage part
+
+inputs.forEach((inp) => {
+  inp.addEventListener('keyup', (e) => {
+    const { name, value } = e.target;
+    formData[name] = value;
+    localStorage.setItem('formData', JSON.stringify(formData));
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const { inputName, email, message } = JSON.parse(
+    localStorage.getItem('formData'),
+  );
+  nameInput.value = inputName;
+  emailInput.value = email;
+  msgInput.value = message;
+});
