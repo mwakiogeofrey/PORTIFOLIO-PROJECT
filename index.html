@@ -170,27 +170,43 @@
             </div>
             <div class="contactForm">
                 <form action="https://formspree.io/f/xoqzkakk" method="post">
-                    <div class="sname">
-                        <div class="firstnameInput">
-                            <input type="text" id="firstname" name="firstname" placeholder="First Name" maxlength="30" required>
+                    <form action="https://formspree.io/f/xwkjovpk" method="POST">
+                        <div class="input-holder">
+            
+                          <input
+                            type="text"
+                            placeholder="Full Name"
+                            required
+                            maxlength="30"
+                            name="name"
+                            id="name"
+                          />
                         </div>
-                        <div class="lastnameInput">
-                            <input type="text" id="lastname" name="lastname" placeholder="Last Name" maxlength="30" required>
+                        <div class="input-holder">
+                         
+                          <input
+                            id="email"
+                            type="email"
+                            placeholder="Email"
+                            required
+                            name="email"
+                          />
                         </div>
-                    </div>
-                    <div class="fullnameInput">
-                        <input type="text" id="fname" name="fname" placeholder="Full Name" maxlength="30" required>
-                    </div>
-                    <div class="emailInput">
-                        <input type="email" id="email" name="_replyto" placeholder="Enter email" required>
-                    </div>
-                    <div class="messageInput">
-                        <textarea name="Opinion" id="Opinion" maxlength="500" required>Write me something...</textarea>
-                    </div>
-                    <div class="submitContainer">
-                        <button type="submit" id="submit" name="submit" value="submit">Get In Touch</button>
-                    </div>
-                </form>
+                        <div class="input-holder">
+                         
+                          <textarea
+                            placeholder="Write your message here"
+                            rows="10"
+                            id="message"
+                            required
+                            name="message"
+                            maxlength="500"
+                          ></textarea>
+                          <p class="msg"></p>
+                        </div>
+                        <button class="submit" type="submit">Get It Touch</button>
+                        <div class="black-line"></div>
+                      </form>
             </div>    
         </div>
     </section>

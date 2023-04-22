@@ -180,3 +180,17 @@ overlay.addEventListener('click', () => {
     closeModal(modal);
   });
 });
+
+const submit = document.querySelector('form');
+const emailInput = document.getElementById('email');
+const resultMsg = document.querySelector('.msg');
+
+submit.addEventListener('submit', (e) => {
+  if (emailInput.value !== emailInput.value.toLowerCase()) {
+    e.preventDefault();
+    resultMsg.textContent = 'Email must be in lower case';
+    resultMsg.style.color = 'red';
+    return false;
+  }
+  return true;
+});

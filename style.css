@@ -926,6 +926,12 @@ input[type=email] {
   border-bottom: 1px solid #ccc;
 }
 
+.contactForm span {
+  color: red;
+  position: absolute;
+  right: 10%;
+}
+
 textarea {
   width: 100%;
   background-color: #fbf8f7;
