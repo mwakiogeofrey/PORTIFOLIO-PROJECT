@@ -195,7 +195,6 @@ submit.addEventListener('submit', (e) => {
   return true;
 });
 
-
 const { inputName, email, message } = JSON.parse(
   localStorage.getItem('formData'),
 );
@@ -205,6 +204,9 @@ const formData = {
   email,
   message,
 };
+const nameInput = document.getElementById('name');
+const msgInput = document.getElementById('message');
+const inputs = document.querySelectorAll('.koko');
 
 // localstorage part
 
